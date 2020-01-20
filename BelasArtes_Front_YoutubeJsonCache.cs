@@ -31,7 +31,7 @@ namespace Enc.BelasArtes_Youtube_JsonCache
         */
 
         [FunctionName("BelasArtes_Front_YoutubeJsonCache")]
-        public async Task Run([TimerTrigger("* * */6 * * *")]TimerInfo myTimer, ILogger log)
+        public async Task Run([TimerTrigger("0 0 */6 * * *")]TimerInfo myTimer, ILogger log)
         {
             log.LogInformation($"Timer trigger function started at: {DateTime.Now}");
 
